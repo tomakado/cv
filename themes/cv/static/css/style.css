@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+
+h1, h3 {
+    margin: 0;
+    /* font-family: 'Pla', sans-serif; */
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+p, li {
+    /* margin-top: 10px; */
+    line-height: 150%;
+    font-size: smaller;
+    margin: 0;
+    /* text-align: justify; */
+}
+
+p.cover {
+    margin-top: 10px;
+}
+
+p.short-description {
+    font-size: larger;
+    text-align: left;
+}
+
+body {
+    /* font-family: 'Playfair Display', serif; */
+    zoom: 1.25;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: rgb(0, 128, 255);
+    border-bottom: 1px solid rgba(0, 128, 255, 0.25);
+    padding-bottom: 1px;
+    cursor: pointer;
+}
+
+a:hover {
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+ul.skills {
+    margin: 0;
+    padding: 0;
+    display: contents;
+}
+
+ul.skills li {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    margin-right: 10px;
+    /* margin-bottom: 5px; */
+    /* font-style: italic; */
+}
+
+p.org-meta {
+    margin-bottom: 10px;
+}
+
+.main .meta {
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.description {
+    margin-bottom: 5px;
+}
+
+.column {
+    margin-right: 30px;
+}
+
+.sidebar section {
+    margin-bottom: 50px;
+}
+
+.sidebar .name {
+    font-weight: 700;
+}
+
+.sidebar .meta {
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.sidebar .description {
+    margin-bottom: 20px;
+}

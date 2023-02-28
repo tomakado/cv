@@ -1,0 +1,6 @@
+<h2>Education</h2>
+
+{{ range sort .Site.Data.education "Start" "desc" }}
+    <p class="name">{{ .Title }}</p>
+    <p class="meta">{{ .OrgName }} • {{ .Start }} — {{ .End }}</p>
+{{ end }}

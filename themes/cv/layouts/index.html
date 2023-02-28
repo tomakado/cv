@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div style="padding:20px; width:794px; height:1123px;">
+  <h1>{{ .Site.Data.index.Name }}</h1>
+  <div style="display: flex">
+    <div class="column" style="flex: 3">
+      <p class="short-description">{{ .Site.Data.index.ShortDescription }}</p>
+    </div>
+    <div class="column" style="flex: 1">
+      <p>📍 {{ .Site.Data.index.Contact.Location }}</p>
+      <p>✉️ <a href="mailto:{{ .Site.Data.index.Contact.Email }}">{{ .Site.Data.index.Contact.Email }}</a></p>
+    </div>
+  </div>
+
+  <div style="display: flex">
+    <div class="column main" style="flex: 3">{{ partial "work.html" . }}</div>
+    <div class="column sidebar" style="flex: 1">
+      <section>{{ partial "education.html" . }}</section>
+      <section>{{ partial "talks.html" . }}</section>
+      <section>{{ partial "hobby.html" . }}</section>
+      <section>{{ partial "languages.html" . }}</section>
+    </div>
+  </div>
+</div>
+{{ end }}

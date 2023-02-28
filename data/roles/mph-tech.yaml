@@ -1,0 +1,12 @@
+Title: "Software Engineer in oil & gas industry" 
+CompanyName: "МФ Технологии"
+Website: https://mphtech.pro
+Order: 2
+Teams:
+  - Name: Monitoring 
+    Start: Mar 2019
+    End: Jul 2019
+    Format: onsite fulltime
+    Location: Novosibirsk, Russia
+    Skills: [MSSQL, Go, NodeJS (TypeScript), MongoDB]
+    Description: "At MPh Tech Ltd. I was working as NodeJS & Golang Backend Developer. My responsibilities included development of different employee management APIs with NodeJS, Typescript, ExpressJS, MongoDB and MSSQL. The company's clients are large oil-producing companies."

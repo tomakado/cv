@@ -1,0 +1,16 @@
+<h2>Work experience</h2>
+{{ range sort .Site.Data.roles "Order" "desc" }}
+    <h3>{{ .Title }}</h3>
+    {{ $companyName := .CompanyName }}
+    {{ $website := .Website }}
+    {{ range .Teams }}
+        <p class="meta"><a href="{{ $website }}">{{ $companyName }}</a>, {{ .Name }} team • {{ .Format }} • {{ .Start }} — {{ .End }} • {{ .Location }}
+        </p>
+        <p class="description">{{ .Description | markdownify }}</p>
+        <ul class="skills">
+            {{ range .Skills}}
+            <li>{{ . }}</li>
+            {{ end }}
+        </ul>
+    {{ end }}
+{{ end }}

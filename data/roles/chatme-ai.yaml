@@ -1,0 +1,12 @@
+Title: "Software Engineer in no-code NLP platform"
+CompanyName: "chatme.ai"
+Website: https://chatme.ai
+Order: 3
+Teams:
+  - Name: Platform
+    Start: Jul 2019
+    End: Dec 2020
+    Format: hybrid fulltime
+    Location: Novosibirsk; Saint-Petersburg, Russia
+    Skills: [Go, Python, PostgreSQL, MongoDB, Docker, Kubernetes]
+    Description: "I was working at chatme.ai as Python & Golang Backend Developer. I've implemented various microservices using aiohttp, PostgresSQL, MongoDB and Docker in a core product team. This team is focused on development of modern chat bot platform with NLU and pluggable services support."

@@ -1,0 +1,10 @@
+<h2>Hobbies & pet projects</h2>
+
+{{ range .Site.Data.hobby }}
+    {{ if .URL }}
+    <p class="name"><a href="{{ .URL }}">{{ .Title }}</a></p>
+    {{ else }}
+    <p class="name">{{ .Title }}</p>
+    {{ end }}
+    <p class="description">{{ .Description }}</p>
+{{ end }}

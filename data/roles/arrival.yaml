@@ -1,0 +1,32 @@
+Title: "Software Engineer in automotive EV company"
+Website: https://arrival.com
+CompanyName: Arrival
+Order: 5
+Teams:
+  - Name: Elements/Technology
+    Format: hybrid fulltime
+    Start: "Aug 2022"
+    End: "Feb 2022"
+    Location: Tbilisi, Georgia
+    Skills: [pprof, gRPC, Go, Python, Docker, Linux]
+    Description: "I was responsible for maintenance of diagnostics and software update services. Go and Python were used to develop services running directly on the vehicle."
+  - Name: Service Platform
+    Format: hybrid fulltime
+    Start: "Mar 2021"
+    End: "July 2022"
+    Location: Saint-Petersburg, Russia; Tbilisi, Georgia
+    Skills: [Go, Clojure, PostgreSQL, Datomic, MongoDB, Linux, RabbitMQ, Nginx]
+    Description: >
+      Service Platform is an ecosystem of different systems for observing devices and automatically resolving issues with them. Services I’ve contributed are powered by Go, Clojure, PostgreSQL, Datomic, and Docker.
+
+      * Increased maturity of development experience and processes (pipelines, code quality, DevOps, etc.)
+      
+      * Helped one junior Go developer to grow to middle
+      
+      * Designed and implemented architecture of vehicle charging infrastructure
+      
+      * Integrated complex algorithms for vehicle resource planning and charging stations availability prediction
+      
+      * Integrated third party charging operators with industrial charging protocols
+      
+      * Integrated payment system

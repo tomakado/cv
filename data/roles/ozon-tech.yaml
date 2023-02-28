@@ -1,0 +1,12 @@
+Title: "Software Engineer in the largest e-commerce platform in Russia"
+CompanyName: "OZON Tech"
+Website: https://ozon.ru
+Order: 4
+Teams:
+  - Name: Seller API
+    Start: Dec 2020
+    End: Feb 2021
+    Format: hybrid fulltime
+    Location: Saint-Petersburg, Russia
+    Skills: [Go, gRPC, PostgreSQL, Kubernetes]
+    Description: "As I backend developer, I was working on internal services providing tools for sellers who earn on OZON marketplace. Such includes seller dashboard, seller API, tariffication, delivery scheduling, etc. I used Go, PostgreSQL and Kubernetes to develop those services."
