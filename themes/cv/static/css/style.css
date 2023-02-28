@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap');
-
 h1, h3 {
     margin: 0;
-    /* font-family: 'Pla', sans-serif; */
 }
 
 h3 {
@@ -10,11 +7,9 @@ h3 {
 }
 
 p, li {
-    /* margin-top: 10px; */
     line-height: 150%;
     font-size: smaller;
     margin: 0;
-    /* text-align: justify; */
 }
 
 p.cover {
@@ -27,7 +22,6 @@ p.short-description {
 }
 
 body {
-    /* font-family: 'Playfair Display', serif; */
     zoom: 1.25;
 }
 
@@ -66,6 +60,10 @@ p.org-meta {
 .main .meta {
     margin-top: 10px;
     font-weight: 700;
+}
+
+.main p {
+    text-align: justify;
 }
 
 .description {
