@@ -6,14 +6,14 @@ Teams:
   - Name: Elements/Technology
     Format: hybrid fulltime
     Start: "Aug 2022"
-    End: "Feb 2022"
+    End: "Feb 2023"
     Location: Tbilisi, Georgia
     Skills: [pprof, gRPC, Go, Python, Docker, Linux]
     Description: "I was responsible for maintenance of diagnostics and software update services. Go and Python were used to develop services running directly on the vehicle."
   - Name: Service Platform
     Format: hybrid fulltime
     Start: "Mar 2021"
-    End: "July 2022"
+    End: "Jul 2022"
     Location: Saint-Petersburg, Russia; Tbilisi, Georgia
     Skills: [Go, Clojure, PostgreSQL, Datomic, MongoDB, Linux, RabbitMQ, Nginx]
     Description: >
