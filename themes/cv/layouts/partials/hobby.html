@@ -6,5 +6,5 @@
     {{ else }}
     <p class="name">{{ .Title }}</p>
     {{ end }}
-    <p class="description">{{ .Description }}</p>
+    <p class="description">{{ .Description | markdownify }}</p>
 {{ end }}

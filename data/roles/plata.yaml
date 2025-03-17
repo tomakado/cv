@@ -1,0 +1,20 @@
+Title: "Software Engineer in the fastest growing fintech in Mexico"
+Website: https://platacard.mx
+CompanyName: Plata
+Order: 6
+Teams:
+  - Name: Cards & Accounts
+    Format: hybrid fulltime
+    Start: "Mar 2023"
+    End: "now"
+    # End: "Feb 2023"
+    Location: Barcelona, Spain
+    Skills: [Go, gRPC, GitLab CI, Kubernetes, PostgreSQL, Kafka]
+    Description: > 
+      At Plata, my role involves developing and maintaining robust user-facing services for mobile applications, ensuring reliability and responsiveness. Key contributions include:
+
+      - Optimized GitLab CI pipelines, significantly reducing build times and improving overall deployment efficiency
+
+      - Enhanced developer experience by streamlining the setup and usage of development tools, increasing team productivity and ease-of-use
+
+      - Conducted technical interviews for candidates ranging from junior to senior developers, contributing to strategic hiring decisions and fostering team growth 

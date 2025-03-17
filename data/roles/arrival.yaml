@@ -14,7 +14,7 @@ Teams:
     Format: hybrid fulltime
     Start: "Mar 2021"
     End: "Jul 2022"
-    Location: Saint-Petersburg, Russia; Tbilisi, Georgia
+    Location: Saint-Petersburg, Russia
     Skills: [Go, Clojure, PostgreSQL, Datomic, MongoDB, Linux, RabbitMQ, Nginx]
     Description: >
       Service Platform is an ecosystem of different systems for observing devices and automatically resolving issues with them. Services I’ve contributed are powered by Go, Clojure, PostgreSQL, Datomic, and Docker.
