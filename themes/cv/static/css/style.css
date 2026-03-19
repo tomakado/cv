@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* ── A4 Page Container ─────────────────────────── */
+
+.page {
+    width: 794px;
+    height: 1123px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* ── Print ──────────────────────────────────────── */
 
 @media print {
     @page {
@@ -7,45 +18,85 @@
     }
     body {
         margin: 0;
-        padding: 20px;
-        font-size: 9pt;
+        padding: 0;
+    }
+    .page {
+        padding: 15px 20px;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    a:link, a:visited {
+        border-bottom: none;
     }
 }
 
-h1, h3 {
+/* ── Typography ─────────────────────────────────── */
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 11px;
+    line-height: 1.4;
     margin: 0;
+    color: #1a1a1a;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+h1 {
+    font-size: 22px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 13px;
+    margin: 10px 0 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 2px;
 }
 
 h3 {
-    margin-top: 20px;
+    font-size: 12px;
+    margin: 8px 0 0;
 }
 
 p, li {
-    line-height: 150%;
-    font-size: smaller;
+    font-size: 11px;
+    line-height: 1.4;
     margin: 0;
 }
 
-p.cover {
-    margin-top: 10px;
+/* ── Header ─────────────────────────────────────── */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
-p.short-description {
-    font-size: 18px;
-    text-align: left;
+.contact {
+    display: flex;
+    gap: 12px;
+    font-size: 10px;
+    white-space: nowrap;
 }
 
-body {
-    /* font-family: 'Source Serif Pro', serif; */
-    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    /* zoom: 1.25; */
+.subtitle {
+    font-size: 13px;
+    margin: 4px 0 0;
+    color: #333;
 }
+
+/* ── Links ──────────────────────────────────────── */
 
 a:link, a:visited {
     text-decoration: none;
     color: rgb(0, 128, 255);
     border-bottom: 1px solid rgba(0, 128, 255, 0.25);
-    padding-bottom: 1px;
+    padding-bottom: 0;
     cursor: pointer;
 }
 
@@ -54,62 +105,106 @@ a:hover {
     border-bottom: 1px solid blue;
 }
 
-ul.skills {
-    margin: 0;
-    padding: 0;
-    display: contents;
+/* ── Work Experience ────────────────────────────── */
+
+.work-section h3 {
+    margin-top: 14px;
 }
 
-ul.skills li {
-    /* font-family: sans-serif; */
-    list-style: none;
-    display: inline-block;
-    margin: 0;
-    font-size: x-small;
-    /* margin-right: 10px; */
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    /* margin-bottom: 5px; */
-    /* font-style: italic; */
+.work-section h3:first-of-type {
+    margin-top: 0;
 }
 
-p.org-meta {
-    margin-bottom: 10px;
+.meta {
+    font-size: 10px;
+    margin: 1px 0;
+    color: #444;
 }
 
-.main .meta {
-    margin-top: 10px;
-    font-weight: 700;
-}
-
-.main p {
-    text-align: justify;
+.work-section .meta {
+    font-weight: 600;
 }
 
 .description {
-    margin-bottom: 5px;
+    margin: 2px 0;
+    text-align: justify;
 }
 
-.column {
-    margin-right: 30px;
+.description ul {
+    margin: 2px 0;
+    padding-left: 16px;
 }
 
-.sidebar section {
-    margin-bottom: 50px;
+.description li {
+    margin-bottom: 1px;
 }
 
-.sidebar .name {
-    font-weight: 700;
+p.org-meta {
+    margin-bottom: 4px;
 }
 
-.sidebar .meta {
-    font-weight: normal;
+/* ── Skills Tags ────────────────────────────────── */
+
+ul.skills {
+    margin: 2px 0 6px;
+    padding: 0;
+    display: block;
+}
+
+ul.skills li {
+    list-style: none;
+    display: inline-block;
     margin: 0;
-    margin-bottom: 10px;
+    font-size: 9px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 0 5px;
+    line-height: 1.6;
 }
 
-.sidebar .description {
-    margin-bottom: 20px;
+/* ── Bottom Grid (Education, Talks, Hobbies) ─── */
+
+.bottom-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 0 20px;
+    margin-top: 10px;
+    border-top: 1.5px solid #ddd;
+    padding-top: 4px;
+}
+
+.bottom-grid h2 {
+    font-size: 11px;
+    margin: 2px 0 2px;
+}
+
+.bottom-grid p {
+    font-size: 10px;
+    line-height: 1.35;
+}
+
+.bottom-grid .name {
+    font-weight: 600;
+}
+
+.bottom-grid .meta {
+    font-weight: normal;
+    margin-bottom: 4px;
+}
+
+.bottom-grid .description {
+    margin-bottom: 6px;
+    text-align: left;
+    font-size: 10px;
+    line-height: 1.35;
+}
+
+.bottom-grid section {
+    margin-bottom: 0;
+}
+
+/* ── Cover letter (kept for potential use) ──────── */
+
+p.cover {
+    margin-top: 10px;
 }

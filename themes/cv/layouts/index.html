@@ -1,25 +1,25 @@
 {{ define "main" }}
-<div style="padding:20px; width:794px; height:1123px;">
-  <h1>{{ .Site.Data.index.Name }}</h1>
-  <div style="display: flex">
-    <div class="column" style="flex: 3">
-      <p class="short-description">{{ .Site.Data.index.ShortDescription }}</p>
+<div class="page">
+  <header class="header">
+    <h1>{{ .Site.Data.index.Name }}</h1>
+    <div class="contact">
+      <span>📍 {{ .Site.Data.index.Contact.Location }}</span>
+      <span>✉️ <a href="mailto:{{ .Site.Data.index.Contact.Email }}">{{ .Site.Data.index.Contact.Email }}</a></span>
+      <span>🐙 <a href="https://github.com/{{ .Site.Data.index.Contact.GitHub }}">{{ .Site.Data.index.Contact.GitHub }}</a></span>
+      <span>{{ range $i, $lang := .Site.Data.index.Languages }}{{ if $i }}{{ end }}{{ $lang }}{{ end }}</span>
     </div>
-    <div class="column" style="flex: 1">
-      <p>📍 {{ .Site.Data.index.Contact.Location }}</p>
-      <p>✉️ <a href="mailto:{{ .Site.Data.index.Contact.Email }}">{{ .Site.Data.index.Contact.Email }}</a></p>
-      <p>🐙 <a href="https://github.com/{{ .Site.Data.index.Contact.GitHub }}">{{ .Site.Data.index.Contact.GitHub }}</a></p>
-    </div>
-  </div>
+  </header>
 
-  <div style="display: flex">
-    <div class="column main" style="flex: 3">{{ partial "work.html" . }}</div>
-    <div class="column sidebar" style="flex: 1">
-      <section>{{ partial "education.html" . }}</section>
-      <section>{{ partial "talks.html" . }}</section>
-      <section>{{ partial "hobby.html" . }}</section>
-      <section>{{ partial "languages.html" . }}</section>
-    </div>
-  </div>
+  <p class="subtitle">{{ .Site.Data.index.ShortDescription }}</p>
+
+  <main class="work-section">
+    {{ partial "work.html" . }}
+  </main>
+
+  <footer class="bottom-grid">
+    <section>{{ partial "hobby.html" . }}</section>
+    <section>{{ partial "education.html" . }}</section>
+    <section>{{ partial "talks.html" . }}</section>
+  </footer>
 </div>
 {{ end }}

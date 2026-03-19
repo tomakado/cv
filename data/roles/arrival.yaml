@@ -17,16 +17,6 @@ Teams:
     Location: Saint-Petersburg, Russia
     Skills: [Go, Clojure, PostgreSQL, Datomic, MongoDB, Linux, RabbitMQ, Nginx]
     Description: >
-      Service Platform is an ecosystem of different systems for observing devices and automatically resolving issues with them. Services I’ve contributed are powered by Go, Clojure, PostgreSQL, Datomic, and Docker.
+      - Improved development processes (CI, code quality, DevOps) and mentored a junior Go developer to mid-level
 
-      * Increased maturity of development experience and processes (pipelines, code quality, DevOps, etc.)
-      
-      * Helped one junior Go developer to grow to middle
-      
-      * Designed and implemented architecture of vehicle charging infrastructure
-      
-      * Integrated complex algorithms for vehicle resource planning and charging stations availability prediction
-      
-      * Integrated third party charging operators with industrial charging protocols
-      
-      * Integrated payment system
+      - Designed vehicle charging infrastructure: resource planning algorithms, third-party operator integration with industrial protocols, and payment system

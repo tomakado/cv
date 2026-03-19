@@ -6,7 +6,7 @@
     {{ range .Teams }}
         <p class="meta"><a href="{{ $website }}">{{ $companyName }}</a>, {{ .Name }} team • {{ .Format }} • {{ .Start }} — {{ .End }} • {{ .Location }}
         </p>
-        <p class="description">{{ .Description | markdownify }}</p>
+        <div class="description">{{ .Description | markdownify }}</div>
         <ul class="skills">
             {{ range .Skills}}
             <li>{{ . }}</li>
