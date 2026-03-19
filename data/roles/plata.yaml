@@ -3,15 +3,29 @@ Website: https://platacard.mx
 CompanyName: Plata
 Order: 6
 Teams:
+  - Name: DevX (Developer Experience)
+    Format: hybrid fulltime
+    Start: "Oct 2025"
+    Location: Barcelona, Spain
+    End: "now"
+    Skills: [Go, Kubernetes, GitLab CI, Kafka, Temporal, TUI (BubbleTea), UX/UI]
+    Description: >
+      - Designed and built an internal developer CLI that automates routine workflows — access request provisioning, service scaffolding from templates, and local environment setup — reducing manual toil and onboarding friction across engineering teams
+
+      - Built a collaborative code editor for technical interviews (whiteboard with syntax highlighting), eliminating dependency on third-party platforms and giving full control over the hiring pipeline
+      
+      - Developed AI agents for automated code review and routine task automation, enabling engineers to get baseline feedback without blocking colleagues' time
+
+      - Drove team's internal products adoption and visibility through release announcements, internal demos, and a regular developer experience digest
+
   - Name: Cards & Accounts
     Format: hybrid fulltime
     Start: "Mar 2023"
-    End: "now"
-    # End: "Feb 2023"
+    End: "Oct 2025"
     Location: Barcelona, Spain
     Skills: [Go, gRPC, GitLab CI, Kubernetes, PostgreSQL, Kafka]
     Description: > 
-      At Plata, my role involves developing and maintaining robust user-facing services for mobile applications, ensuring reliability and responsiveness. Key contributions include:
+      At Cards & Accounts team in Plata, my role involved developing and maintaining robust user-facing services for mobile applications, ensuring reliability and responsiveness. Key contributions include:
 
       - Optimized GitLab CI pipelines, significantly reducing build times and improving overall deployment efficiency
 
